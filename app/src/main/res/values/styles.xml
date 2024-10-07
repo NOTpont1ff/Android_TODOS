@@ -1,0 +1,6 @@
+<resources>
+    <style name="VoTVTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/voicesofthevoidfont</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

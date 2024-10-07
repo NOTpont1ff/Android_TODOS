@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/user_data"
+            android:layout_width="188dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_edittext_background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Enter task"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " />
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="85dp"
+            android:layout_height="38dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/todosbutton4"
+            android:contentDescription="Add Task" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="79dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/selectButton"
+            android:layout_width="52dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/todosselect1" />
+
+        <ImageView
+            android:id="@+id/LogoGif"
+            android:layout_width="156dp"
+            android:layout_height="92dp"
+            android:src="@drawable/logogif" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:text="Date: " />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/deletebutton" />
+</RelativeLayout>
